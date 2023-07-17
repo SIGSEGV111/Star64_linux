@@ -280,7 +280,7 @@ static void jh7110_clk_pll_debug_init(struct clk_hw *hw,
 	debugfs_create_regset32("registers", 0400, dentry, regset);
 }
 #else
-#define jh7110_clk_debug_init NULL
+#define jh7110_clk_pll_debug_init NULL
 #endif
 
 static const struct clk_ops jh7110_clk_pll_ops = {
